@@ -1,3 +1,44 @@
+2.6.12
+FIXES:
+Pie chart data labels were hidden behind other slices if labelRadius < 0
+
+If chart was in a div with scrollbar, cursor was displayed in wrong position after 
+scrolling with FF.
+
+Some other minor bugs fixed.
+
+2.6.11
+cursor and balloons were not shown on iPad when cursor.pan was set to true
+
+Labels near XY chart bullets were placed incorrectly (since last version only)
+
+some other minor bugs fixed
+
+2.6.10
+AmCharts.baseHref property added. Set it to true if you are using base href in your
+HTML. This will help so solve svg/base href bug (clip paths are not working and
+gradient fills are displayed as balck).
+
+Text can be wrapped again. Add \n in places you need new line in text.
+
+Some other minor bugs fixed.
+
+2.6.9
+AmCharts.useUTC property added, default value is false. Set it to true if you
+create dates using timestamps, like new Date(1256953732) and wish dates to be
+formatted usin UTC instead of local time.
+
+FIX:
+If more than two colors were set for graph.fillColors, only two first colors
+were used.
+
+FIX:
+chartCursor.bulletsEnabled was ignored, even set to true.
+
+FIX: on IE8, if one slice was 100%, the circle wasn't displayed.
+
+FIX: custom fields in balloonText were not supported by XY chart. 
+
 2.6.8
 pieAlpha property was ignored.
 plotAreaBorderAlpha was ignored if plotAreaAlphas was 0
