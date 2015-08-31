@@ -1,3 +1,8 @@
+2.6.4
+minSelectedTime property added to AmSerialTime
+
+some minor bugs fixed. 
+
 2.6.3
 zoom-out button wasn't working on iPad (only since 2.6.0)
 
