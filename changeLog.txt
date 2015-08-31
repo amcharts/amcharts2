@@ -1,3 +1,44 @@
+2.8.2
+
+Step line's corners sometimes were not perfect (one extra pixel could be added
+in the end of horizontal line)
+
+You couldn't change panEventsEnabled of AmChart class after the chart was 
+initialized.
+
+You couldn't chane legend's position after the chart was initialized.
+
+Step line chart was not correctly filled if Value axis was of some stacked type.
+
+Some other minor bugs fixed.
+
+2.8.1
+
+hideXScrollbar and hideYScrollbar properties added to AmXYChart. This will
+allow you to show one scrollbar only.
+
+2.8.0
+
+New features:
+you can pass dates as timestamps instead of date objects.
+
+ChartCursor.selectWithoutZooming property added which allows marking desired area
+with chart cursor without zooming-in.
+
+graph.fillToGraph property added. This allows creating band or range graphs.
+The area between graph and fillToGraph will be filled with a color if graph.fillAlphas
+is set to > 0 value. Works with "line" graph type only.
+
+Bug fixes:
+
+Blurry lines on all browsers fixed
+
+right/bottom grid line was hidden if marginRight/marginBottom were set to 0
+
+category balloon was shifted a bit since last version
+
+background image was incorrectly sized
+
 2.7.10
 Problem with balloon position in IE10 fixed.
 
