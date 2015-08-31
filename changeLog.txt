@@ -1,3 +1,48 @@
+2.9.0
+
+Since this version, when setting zooming date-based chart, you have to set
+exact "to" date. For example, if you want the chart to display one day only,
+set from date as 2012,1,1 (first of February) and the to date as
+new Date(2012,1,2) or new Date(2012,1,1,23,59,59). Previously you could set the
+same date for start and end dates and the chart used to select one "minPeriod"
+automatically, however this caused a lot of problems for charts displaying
+monthly or yearly data.
+
+AmCharts.clear method added. Call this method if you want completely to remove all charts from a page.
+
+Memory leak fixed.
+
+Last item was not displayed if minPeriod was bigger than day.
+
+Switch of legend marker was in wrong position when marker size was quite small.
+
+validateData() method caused error when fillToGraph property was set.
+
+if valueAxis.minimum was set and values were smaller than this minimum, columns were not displayed.
+
+align property wasn't working when using external container for the legend.
+
+some other minor bugs fixed.
+
+2.8.5
+
+above property added to Guide. If you set it to true, guides will be displayed above graphs.
+Some minor bugs fixed.
+
+2.8.4
+
+NEW FEATURE:
+you can set a customly created div element as a container of your legend. To do this,
+you should pass id or reference of the div in this method:
+
+chart.addLegend(legend, divID);
+
+FIXES:
+balloon could be wrongly positioned in marginTop style was added directly to <html> element.
+chart.animateAgain(); worked only if validateNow() method was called after.
+in some specific cases scrollbar could act icorrectly on IE8/IE7.
+
+
 2.8.3
 
 When panEventsEnabled was set to true, balloons over bullets were not shown.
