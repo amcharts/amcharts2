@@ -1,3 +1,12 @@
+2.6.13
+FIXES:
+When viewing a page with a chart from iOS browser, console logged some errors
+
+gradientOrientation was ignored by area charts
+
+plotAreaGradientAngle property added to AmRectangularChart, can accept 0, 90, 
+180 and 270 values.
+
 2.6.12
 FIXES:
 Pie chart data labels were hidden behind other slices if labelRadius < 0
