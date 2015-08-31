@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <text_color>FFFFFF</text_color>
+  <redraw>1</redraw>
+  <plot_area>
+    <margins>
+      <top>75</top>
+    </margins>
+  </plot_area>
+  <grid>
+    <category>
+      <color>FFFFFF</color>
+      <alpha>30</alpha>
+      <dashed>1</dashed>
+      <dash_length>4</dash_length>
+    </category>
+    <value>
+      <color>FFFFFF</color>
+      <alpha>30</alpha>
+      <dashed>1</dashed>
+      <dash_length>4</dash_length>
+    </value>
+  </grid>
+  <axes>
+    <category>
+      <width>1</width>
+      <color>FFFFFF</color>
+      <alpha>20</alpha>
+    </category>
+    <value>
+      <width>1</width>
+      <color>FFFFFF</color>
+      <alpha>20</alpha>
+    </value>
+  </axes>
+  <values>
+    <value>
+      <min>0</min>
+      <unit>%</unit>
+    </value>
+  </values>
+  <balloon>
+    <text_color>000000</text_color>
+  </balloon>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <column>
+    <type>3d column</type>
+    <width>70</width>
+    <spacing>0</spacing>
+    <hover_brightness>-25</hover_brightness>
+    <balloon_text>Grow in {series} ({title}) : {value}%</balloon_text>
+  </column>
+  <depth>15</depth>
+  <angle>25</angle>
+  <line>
+    <balloon_text>{value}</balloon_text>
+    <data_labels>{value}</data_labels>
+  </line>
+  <graphs>
+    <graph gid="0">
+      <title>2004</title>
+      <color>D2CB00</color>
+    </graph>
+    <graph gid="1">
+      <title>2005</title>
+      <color>BEDF66</color>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Real GDP Growth, 2004 – 2005</b>]]></text>
+      <y>25</y>
+      <text_size>14</text_size>
+      <align>center</align>
+    </label>
+  </labels>
+  <guides>
+    <guide gid="1">
+      <start_value>4.877</start_value>
+      <title>2004 average</title>
+      <color>FFFFFF</color>
+      <behind>1</behind>
+      <dash_length>0</dash_length>
+      <inside>1</inside>
+      <alpha>100</alpha>
+    </guide>
+  </guides>
+</settings>

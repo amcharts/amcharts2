@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <text_color>FFFFFF</text_color>
+  <connect>0</connect>
+  <hide_bullets_count>15</hide_bullets_count>
+  <data_type>csv</data_type>
+  <background>
+    <color>000000</color>
+    <alpha>100</alpha>
+  </background>
+  <plot_area>
+    <color>000000</color>
+    <border_color>555555</border_color>
+    <border_alpha>100</border_alpha>
+    <margins>
+      <left>70</left>
+      <right>70</right>
+      <top>70</top>
+    </margins>
+  </plot_area>
+  <grid>
+    <x>
+      <color>FFFFFF</color>
+    </x>
+    <y_left>
+      <color>FFFFFF</color>
+    </y_left>
+  </grid>
+  <axes>
+    <x>
+      <alpha>0</alpha>
+    </x>
+    <y_left>
+      <alpha>0</alpha>
+    </y_left>
+  </axes>
+  <scroller>
+    <height>15</height>
+    <color>FFFFFF</color>
+    <alpha>30</alpha>
+    <bg_color>FFFFFF</bg_color>
+    <bg_alpha>20</bg_alpha>
+  </scroller>
+  <legend>
+    <values>
+      <enabled>1</enabled>
+      <align>left</align>
+      <text>{value} C</text>
+    </values>
+  </legend>
+  <graphs>
+    <graph gid="0">
+      <title>Anomaly</title>
+      <color>76BC2C</color>
+      <color_hover>FF0000</color_hover>
+      <selected>0</selected>
+      <balloon_text>{value} C</balloon_text>
+      <bullet>round_outlined</bullet>
+    </graph>
+    <graph gid="1">
+      <title>Smoothed</title>
+      <color>2CA9BC</color>
+      <color_hover>FF0000</color_hover>
+      <fill_alpha>30</fill_alpha>
+      <balloon_text>{value} C</balloon_text>
+      <bullet>round_outlined</bullet>
+      <bullet_size>10</bullet_size>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Temperature anomaly</b>]]></text>
+      <y>25</y>
+      <text_size>14</text_size>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

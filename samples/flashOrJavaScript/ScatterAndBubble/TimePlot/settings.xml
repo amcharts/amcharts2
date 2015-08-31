@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <redraw>1</redraw>
+  <mask>0</mask>
+  <plot_area>
+    <border_alpha>100</border_alpha>
+    <margins>
+      <left>70</left>
+    </margins>
+  </plot_area>
+  <grid>
+    <x>
+      <approx_count>20</approx_count>
+    </x>
+  </grid>
+  <axes>
+    <x>
+      <width>1</width>
+    </x>
+    <y>
+      <width>1</width>
+    </y>
+  </axes>
+  <values>
+    <x>
+      <type>date</type>
+      <rotate>90</rotate>
+      <skip_first>0</skip_first>
+    </x>
+    <y>
+      <skip_first>0</skip_first>
+    </y>
+  </values>
+  <balloon>
+    <alpha>80</alpha>
+    <corner_radius>5</corner_radius>
+    <border_width>3</border_width>
+    <border_color>000000</border_color>
+    <border_alpha>50</border_alpha>
+  </balloon>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <strings>
+    <DD>d</DD>
+  </strings>
+  <graphs>
+    <graph gid="0">
+      <color>CC0000</color>
+      <balloon_text>{x}: ${y}</balloon_text>
+      <bullet>round_outlined</bullet>
+    </graph>
+    <graph gid="1">
+      <color>00CC00</color>
+      <balloon_text>{x}: ${y}</balloon_text>
+      <bullet>square_outlined</bullet>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <y>350</y>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

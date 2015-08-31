@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <font>Tahoma</font>
+  <redraw>1</redraw>
+  <data_type>csv</data_type>
+  <skip_rows>1</skip_rows>
+  <plot_area>
+    <margins>
+      <left>110</left>
+    </margins>
+  </plot_area>
+  <axes>
+    <x>
+      <alpha>0</alpha>
+    </x>
+    <y>
+      <alpha>0</alpha>
+    </y>
+  </axes>
+  <values>
+    <x>
+      <min>300</min>
+      <max>800</max>
+    </x>
+    <y>
+      <type>duration</type>
+    </y>
+  </values>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <help>
+    <balloon>
+      <text>Select the area to enlarge</text>
+    </balloon>
+  </help>
+  <strings>
+    <ss>s</ss>
+    <mm>min</mm>
+    <hh>h</hh>
+    <DD>d</DD>
+  </strings>
+  <graphs>
+    <graph gid="0">
+      <color>B92F2F</color>
+      <bullet_size>2</bullet_size>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>mass / charge</b>]]></text>
+      <y>355</y>
+      <align>center</align>
+    </label>
+    <label lid="1">
+      <text><![CDATA[<b>duration</b>]]></text>
+      <x>10</x>
+      <y>200</y>
+      <rotate>1</rotate>
+    </label>
+  </labels>
+</settings>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <digits_after_decimal>2</digits_after_decimal>
+  <context_menu>
+    <menu mid="2" function_name="selectInterval(10)" title="10 years"/>
+    <menu mid="3" function_name="selectInterval(20)" title="20 years"/>
+    <menu mid="4" function_name="showAll" title="Show full"/>
+  </context_menu>
+  <graphs>
+    <graph gid="1">
+      <title>Nominal</title>
+      <color>FFCC00</color>
+      <bullet>round</bullet>
+    </graph>
+    <graph gid="2">
+      <title>Inflation Adjusted 2006</title>
+      <color>999999</color>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Historical Crude Oil Prices</b>]]></text>
+      <y>20</y>
+      <width>520</width>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

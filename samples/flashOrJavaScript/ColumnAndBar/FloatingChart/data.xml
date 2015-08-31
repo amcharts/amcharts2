@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart>
+	<series>
+		<value xid="John">John</value>
+		<value xid="Joe">Joe</value>
+		<value xid="Susan">Susan</value>
+		<value xid="Eaton">Eaton</value>
+	</series>
+	<graphs>
+		<graph gid="0" title="Schedule" color="#33CCFF">
+		<value xid="John" start="8" color="#FF0F00">11</value>
+		<value xid="Joe" start="10" color="#FF9E01">13</value>
+		<value xid="Susan" start="11" color="#F8FF01">18</value>
+		<value xid="Eaton" start="15" color="#04D215">19</value>
+   </graph>
+  </graphs>
+</chart>

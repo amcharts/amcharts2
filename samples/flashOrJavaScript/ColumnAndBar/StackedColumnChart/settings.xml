@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <plot_area>
+    <margins>
+      <left>20</left>
+      <right>40</right>
+      <top>80</top>
+    </margins>
+  </plot_area>
+  <grid>
+    <category>
+      <alpha>0</alpha>
+    </category>
+    <value>
+      <alpha>0</alpha>
+    </value>
+  </grid>
+  <axes>
+    <category>
+      <alpha>0</alpha>
+    </category>
+    <value>
+      <alpha>0</alpha>
+    </value>
+  </axes>
+  <values>
+    <value>
+      <enabled>0</enabled>
+      <min>0</min>
+      <unit>%</unit>
+    </value>
+  </values>
+  <balloon>
+    <alpha>75</alpha>
+    <text_size>13</text_size>
+    <corner_radius>5</corner_radius>
+    <border_width>3</border_width>
+    <border_color>000000</border_color>
+    <border_alpha>50</border_alpha>
+  </balloon>
+  <legend>
+    <spacing>5</spacing>
+    <align>center</align>
+  </legend>
+  <column>
+    <type>100% stacked</type>
+    <width>70</width>
+    <spacing>0</spacing>
+    <alpha>60</alpha>
+    <balloon_text><![CDATA[In {series} {percents}% of rich people investments went to {title}</b>]]></balloon_text>
+    <data_labels>{percents}%</data_labels>
+    <data_labels_text_color>FFFFFF</data_labels_text_color>
+    <grow_time>2</grow_time>
+    <grow_effect>strong</grow_effect>
+  </column>
+  <depth>20</depth>
+  <angle>25</angle>
+  <line>
+    <balloon_text>{value}</balloon_text>
+    <data_labels>{value}</data_labels>
+  </line>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Where rich people invest their money?</b>]]></text>
+      <y>25</y>
+      <text_size>14</text_size>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

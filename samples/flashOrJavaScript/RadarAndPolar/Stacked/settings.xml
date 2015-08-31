@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <values>
+    <skip_last>1</skip_last>
+    <unit>$</unit>
+    <unit_position>left</unit_position>
+  </values>
+  <balloon>
+    <show>{title}: ${value} mln.</show>
+  </balloon>
+  <legend>
+    <align>center</align>
+  </legend>
+  <type>stacked</type>
+  <radar>
+    <grow_time>2</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </radar>
+  <graphs>
+    <graph gid="1">
+      <title>Other expences</title>
+      <color>999999</color>
+      <fill_alpha>50</fill_alpha>
+      <bullet>round</bullet>
+    </graph>
+    <graph gid="2">
+      <title>Salaries</title>
+      <color>000000</color>
+      <fill_alpha>50</fill_alpha>
+      <bullet>round</bullet>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Stacked radar chart</b>]]></text>
+      <y>10</y>
+      <text_size>12</text_size>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

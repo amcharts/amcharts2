@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>amCharts Example</title>
+	</head>
+
+	<body style="background-color:#EEEEEE">
+	    <!-- This script will display JavaScript charts if browser supports SVG, and only if it doesn't will display Flash version. -->
+		<!-- saved from url=(0013)about:internet -->
+		<!-- amcharts script-->
+		<!-- swf object (version 2.2) is used to detect if flash is installed and include swf in the page -->
+		<script type="text/javascript" src="../../amcharts/flash/swfobject.js"></script>
+
+		<!-- following scripts required for JavaScript version. The order is important! -->
+		<script type="text/javascript" src="../../amcharts/javascript/amcharts.js"></script>
+		<script type="text/javascript" src="../../amcharts/javascript/amfallback.js"></script>
+		<script type="text/javascript" src="../../amcharts/javascript/raphael.js"></script>
+
+        <!-- chart is placed in this div. if you have more than one chart on a page, give unique id for each div -->
+		<div id="chartdiv" style="width:600px; height:400px; background-color:#FFFFFF"></div>
+
+	    <script type="text/javascript">
+
+            var params = {
+                bgcolor:"#FFFFFF"
+                };
+
+		    var flashVars = {
+		        path: "../../amcharts/flash/",
+
+				/* in most cases settings and data are loaded from files, but, as this require
+				 all the files to be upladed to web server, we use inline data and settings here.*/
+				 
+		        // settings_file: encodeURIComponent("../sampleData/column_settings.xml"),
+		        // data_file: encodeURIComponent("../sampleData/column_data.xml")
+		        
+				chart_data: "USA;19544\nJapan;5455\nFrance;2313\nGermany;2208\nUK;2057\nIndia;1771\nRussia;1495\nSouth Korea;1281",
+                chart_settings: "<settings><data_type>csv</data_type><legend><enabled>0</enabled></legend><pie><inner_radius>30</inner_radius><height>7</height><angle>10</angle><gradient></gradient></pie><animation><start_time>1</start_time><pull_out_time>1</pull_out_time></animation><data_labels><show>{title}</show><max_width>100</max_width></data_labels></settings>"
+			};
+
+			// change == to != to test flash version
+   			if(AmCharts.recommended() == "js"){
+				var amFallback = new AmCharts.AmFallback();
+				// amFallback.settingsFile = flashVars.settings_file;  		// doesn't support multiple settings files or additional_chart_settins as flash does
+				// amFallback.dataFile = flashVars.data_file;
+				amFallback.chartSettings = flashVars.chart_settings;
+				amFallback.chartData = flashVars.chart_data;
+				amFallback.type = "pie";
+				amFallback.write("chartdiv");
+			}
+			else{
+			    swfobject.embedSWF("../../amcharts/flash/ampie.swf", "chartdiv", "600", "400", "8.0.0", "../../amcharts/flash/expressInstall.swf", flashVars, params);
+            }
+
+		</script>
+
+		<!-- end of amcharts script -->
+
+		<!-- other parameters which can be passed with flashVars to swf:
+
+	        chart_data - data in csv or xml format;
+	        chart_settings - settings in xml format;
+	        additional_chart_settings - settings in xml format which will be appended to chart_settings or settings loaded from a file;
+	        loading_settings - string displayed while loading settings;
+	        loading_data - string displayed while loading data;
+	        preloader_color - hex color (#CC0000 for example) of a preloader bar;
+	        error_loading_file - string displayed if indicated file was not found.
+		 -->
+
+	</body>
+</html>

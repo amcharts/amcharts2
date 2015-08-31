@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amCharts examples</title> 
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="../../amcharts/javascript/amcharts.js" type="text/javascript"></script>
+        <script src="../../amcharts/javascript/raphael.js" type="text/javascript"></script>        
+	    
+        <script type="text/javascript">
+
+		var columnChartData = [
+			{name:"John",points:35654, color:"#7F8DA9", bullet:"images/0.gif"},
+			{name:"Damon",points:65456, color:"#FEC514", bullet:"images/1.gif"},
+			{name:"Patrick",points:45724, color:"#DB4C3C", bullet:"images/2.gif"},
+			{name:"Mark",points:13654, color:"#DAF0FD", bullet:"images/3.gif"}];
+
+
+		var lineChartData = [
+			{date:new Date(2009,10,2),value:5},
+			{date:new Date(2009,10,3),value:15},
+			{date:new Date(2009,10,4),value:13},
+			{date:new Date(2009,10,5),value:17},
+			{date:new Date(2009,10,6),value:15},
+			{date:new Date(2009,10,9),value:19},
+			{date:new Date(2009,10,10),value:21},
+			{date:new Date(2009,10,11),value:20},
+			{date:new Date(2009,10,12),value:20},
+			{date:new Date(2009,10,13),value:19},
+			{date:new Date(2009,10,16),value:25},
+			{date:new Date(2009,10,17),value:24},
+			{date:new Date(2009,10,18),value:26},
+			{date:new Date(2009,10,19),value:27},
+			{date:new Date(2009,10,20),value:25},
+			{date:new Date(2009,10,23),value:29},
+			{date:new Date(2009,10,24),value:28},
+			{date:new Date(2009,10,25),value:30},
+			{date:new Date(2009,10,26),value:72, customBullet:"images/redstar.png"},
+			{date:new Date(2009,10,27),value:43},
+			{date:new Date(2009,10,30),value:31},
+			{date:new Date(2009,11,1),value:30},
+			{date:new Date(2009,11,2),value:29},
+			{date:new Date(2009,11,3),value:27},
+			{date:new Date(2009,11,4),value:26}];
+
+        window.onload = function() {
+			// CHART1
+		 	var chart1 = new AmCharts.AmSerialChart();
+			chart1.dataProvider = columnChartData;
+			chart1.categoryField = "name";
+			chart1.marginRight = 0;
+			chart1.marginLeft = 0;
+			chart1.marginBottom = 0;
+			chart1.marginTop = 0;
+			chart1.startDuration = 1;
+
+			var valueAxis1 = new AmCharts.ValueAxis();
+			valueAxis1.minimum = 0;
+			valueAxis1.axisAlpha = 0;
+			valueAxis1.maximum = 80000;
+			valueAxis1.dashLength = 4;
+			chart1.addValueAxis(valueAxis1);
+
+			var catAxis = chart1.categoryAxis;
+			catAxis.inside = true;
+			catAxis.gridAlpha = 0;
+			catAxis.tickLength = 0;
+
+			var graph1 = new AmCharts.AmGraph();
+			graph1.valueField = "points";
+			graph1.customBulletField = "bullet";
+			graph1.bulletOffset = 16;
+			graph1.colorField = "color";
+			graph1.bulletSize = 34;
+			graph1.type = "column";
+			graph1.fillAlphas = 0.8;
+			graph1.cornerRadiusTop = 8;
+			graph1.lineAlpha = 0;
+			chart1.addGraph(graph1);
+
+			chart1.write("container1");
+
+
+			// CHART 2
+		 	var chart2 = new AmCharts.AmSerialChart();
+			chart2.dataProvider = lineChartData;
+			chart2.pathToImages = "../../js/images/";
+			chart2.categoryField = "date";
+			chart2.marginRight = 0;
+			chart2.marginLeft = 0;
+			chart2.marginBottom = 0;
+			chart2.marginTop = 0;
+
+			var catAxis = chart2.categoryAxis;
+			catAxis.parseDates = true;
+			catAxis.inside = true;
+			catAxis.gridAlpha = 0;
+			catAxis.tickLength = 0;
+
+			var valueAxis2 = new AmCharts.ValueAxis();
+			valueAxis2.dashLength = 4;
+			valueAxis2.axisAlpha = 0;
+			chart2.addValueAxis(valueAxis2);
+
+			var graph2 = new AmCharts.AmGraph();
+			graph2.valueField = "value";
+			graph2.type = "line";
+			graph2.lineColor = "#D8E63C";
+			graph2.customBullet = "images/star.gif";
+			graph2.bulletSize = 14;
+			graph2.customBulletField = "customBullet";
+			chart2.addGraph(graph2);
+
+			var chartCursor = new AmCharts.ChartCursor();
+			chart2.addChartCursor(chartCursor);
+
+			chart2.write("container2");
+		}
+
+
+	    </script>
+
+    </head>
+
+	<body>
+		<div id="container1" style="width: 50%; float:left; height: 400px;"></div>
+		<div id="container2" style="width: 50%; float:left; height: 400px;"></div>
+	</body>
+</html>

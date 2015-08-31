@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <data_type>csv</data_type>
+  <plot_area>
+    <color>DADADA</color>
+    <alpha>100</alpha>
+    <margins>
+      <top>55</top>
+      <left>50</left>
+      <right>50</right>
+      <bottom>40</bottom>
+    </margins>
+  </plot_area>
+  <grid>
+    <category>
+      <alpha>5</alpha>
+    </category>
+    <value>
+      <alpha>5</alpha>
+    </value>
+  </grid>
+  <axes>
+    <category>
+      <tick_length>5</tick_length>
+      <width>1</width>
+    </category>
+    <value>
+      <tick_length>5</tick_length>
+      <width>1</width>
+    </value>
+  </axes>
+  <values>
+    <value>
+      <min>0</min>
+      <skip_first>0</skip_first>
+    </value>
+  </values>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <depth>20</depth>
+  <angle>20</angle>
+  <column>
+    <width>100</width>
+    <balloon_text>{series}: {value}</balloon_text>
+    <grow_time>1</grow_time>
+    <grow_effect>regular</grow_effect>
+  </column>
+  <line>
+    <balloon_text>{value}</balloon_text>
+    <data_labels>{value}</data_labels>
+  </line>
+  <graphs>
+    <graph gid="0">
+      <color>BBBB00</color>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Histogram example</b>]]></text>
+      <y>25</y>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <grid>
+    <type>circles</type>
+    <fill_color>000000</fill_color>
+    <fill_alpha>5</fill_alpha>
+  </grid>
+  <values>
+    <skip_last>1</skip_last>
+  </values>
+  <balloon>
+    <show>{axis}: {value} m/s</show>
+  </balloon>
+  <legend>
+    <enabled>0</enabled>
+    <align>center</align>
+  </legend>
+  <radar>
+    <grow_time>2</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </radar>
+  <graphs>
+    <graph gid="1">
+      <color>FFCC00</color>
+      <fill_alpha>60</fill_alpha>
+      <bullet>round</bullet>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Wind speed</b>]]></text>
+      <y>10</y>
+      <text_size>12</text_size>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

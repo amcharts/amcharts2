@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <background>
+    <alpha>100</alpha>
+  </background>
+  <plot_area>
+    <margins>
+      <left>70</left>
+    </margins>
+  </plot_area>
+  <values>
+    <x>
+      <unit_position>left</unit_position>
+    </x>
+  </values>
+  <balloon>
+    <alpha>85</alpha>
+    <corner_radius>3</corner_radius>
+    <border_width>2</border_width>
+    <border_color>000000</border_color>
+    <border_alpha>100</border_alpha>
+  </balloon>
+  <scroller>
+    <color>000000</color>
+    <alpha>50</alpha>
+    <bg_color>000000</bg_color>
+    <bg_alpha>20</bg_alpha>
+  </scroller>
+  <zoom>
+    <border_color>000000</border_color>
+    <border_alpha>60</border_alpha>
+    <bg_color>000000</bg_color>
+    <bg_alpha>15</bg_alpha>
+  </zoom>
+  <legend>
+    <align>center</align>
+  </legend>
+  <help>
+    <balloon>
+      <text>Select the area to enlarge</text>
+    </balloon>
+  </help>
+  <bullets>
+    <grow_time>2</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </bullets>
+  <strings>
+    <DD>d</DD>
+  </strings>
+  <graphs>
+    <graph gid="0">
+      <title>Red Bubbles</title>
+      <color>CC0000</color>
+      <alpha>0</alpha>
+      <balloon_text>{value}</balloon_text>
+      <bullet>bubble</bullet>
+      <bullet_max_size>70</bullet_max_size>
+      <bullet_alpha>50</bullet_alpha>
+    </graph>
+    <graph gid="1">
+      <title>Green bubbles</title>
+      <color>00CC00</color>
+      <alpha>0</alpha>
+      <balloon_text>{value}</balloon_text>
+      <bullet>bubble</bullet>
+      <bullet_max_size>70</bullet_max_size>
+      <bullet_alpha>50</bullet_alpha>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <y>350</y>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

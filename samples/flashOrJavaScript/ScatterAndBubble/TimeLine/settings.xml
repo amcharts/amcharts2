@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <grid>
+    <x>
+      <alpha>5</alpha>
+    </x>
+    <y>
+      <alpha>5</alpha>
+    </y>
+  </grid>
+  <values>
+    <x>
+      <min>-300</min>
+      <max>600</max>
+      <strict_min_max>1</strict_min_max>
+    </x>
+    <y>
+      <min>-150</min>
+      <max>200</max>
+      <strict_min_max>1</strict_min_max>
+    </y>
+  </values>
+  <zoom>
+    <enabled>0</enabled>
+  </zoom>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <help>
+    <balloon>
+      <text>Select the area to enlarge</text>
+    </balloon>
+  </help>
+  <bullets>
+    <hover_brightness>20</hover_brightness>
+    <grow_time>2</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </bullets>
+  <graphs>
+    <graph gid="0">
+      <color>B92F2F</color>
+      <alpha>0</alpha>
+      <balloon_text>{value}</balloon_text>
+      <bullet>bubble</bullet>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Timeline example</b>]]></text>
+      <x>10</x>
+      <y>20</y>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

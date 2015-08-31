@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amCharts examples</title> 
+        <script src="../../amcharts/javascript/amcharts.js" type="text/javascript"></script>
+        <script src="../../amcharts/javascript/raphael.js" type="text/javascript"></script>        
+	    
+        <script type="text/javascript">
+
+        var chart;
+
+        var chartData = [{country:"USA",visits:4252},
+					{country:"China",visits:1882},
+					{country:"Japan",visits:1809},
+					{country:"Germany",visits:1322},
+					{country:"UK",visits:1122},
+					{country:"France",visits:1114},
+					{country:"India",visits:984},
+					{country:"Spain",visits:711},
+					{country:"Netherlands",visits:665},
+					{country:"Russia",visits:580},
+					{country:"South Korea",visits:443},
+					{country:"Canada",visits:441},
+					{country:"Brazil",visits:395},
+					{country:"Italy",visits:386},
+					{country:"Australia",visits:384},
+					{country:"Taiwan",visits:338},
+					{country:"Poland",visits:328}];
+
+         window.onload = function() {
+            // Pie chart
+            var chart1 = new AmCharts.AmPieChart();
+            chart1.dataProvider = chartData;
+
+			chart1.valueField = "visits";
+            chart1.titleField = "country";
+            chart1.angle = 5;
+            chart1.depth3D = 5;
+            chart1.innerRadius = 10;
+            chart1.groupPercent = 3;
+            chart1.startDuration = 1.5;
+            chart1.startRadius = 100;
+            chart1.marginLeft = 0;
+            chart1.marginRight = 0;
+            chart1.labelWidth = 100;
+
+			var legend = new AmCharts.AmLegend();
+			chart1.addLegend(legend);
+
+			chart1.write("container1");
+
+
+            // Column chart
+			var chart2 = new AmCharts.AmSerialChart();
+			chart2.dataProvider = chartData;
+			chart2.categoryField = "country";
+			chart2.marginTop = 15;
+            chart2.marginLeft = 55;
+            chart2.marginRight = 15;
+            chart2.marginBottom = 80;
+            chart2.angle = 30;
+            chart2.depth3D = 15;
+
+			var catAxis = chart2.categoryAxis;
+			catAxis.gridCount = chartData.length;
+			catAxis.labelRotation = 90;
+
+			var graph = new AmCharts.AmGraph();
+			graph.balloonText = "[[category]]: [[value]]";
+			graph.valueField = "visits"
+			graph.type="column";
+			graph.lineAlpha = 0;
+			graph.fillAlphas = 0.8;
+			chart2.addGraph(graph);
+
+			var chartCursor = new AmCharts.ChartCursor();
+			chartCursor.zoomable = false;
+			chartCursor.cursorAlpha = 0;
+			chartCursor.categoryBalloonEnabled = false;
+			chart2.addChartCursor(chartCursor);
+			chart2.write('container2');
+		}
+
+	    </script>
+
+    </head>
+
+	<body>
+		<div id="container1" style="width: 50%; float:left; height: 400px;"></div>
+		<div id="container2" style="width: 50%; float:left; height: 400px;"></div>
+	</body>
+</html>
+
+

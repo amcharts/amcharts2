@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <grid>
+    <x>
+      <alpha>10</alpha>
+    </x>
+    <y>
+      <alpha>10</alpha>
+    </y>
+  </grid>
+  <axes>
+    <x>
+      <alpha>0</alpha>
+    </x>
+    <y>
+      <alpha>0</alpha>
+    </y>
+  </axes>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <help>
+    <balloon>
+      <text>Select the area to enlarge</text>
+    </balloon>
+  </help>
+  <bullets>
+    <hover_brightness>20</hover_brightness>
+    <grow_time>2</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </bullets>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Bulls eye chart example</b>]]></text>
+      <x>10</x>
+      <y>20</y>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

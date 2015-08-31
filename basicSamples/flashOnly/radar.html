@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>amCharts Example</title>
+	</head>
+
+	<body style="background-color:#EEEEEE">
+		<!-- saved from url=(0013)about:internet -->
+		<!-- amcharts script-->
+		<!-- swf object (version 2.2) is used to detect if flash is installed and include swf in the page -->
+		<script type="text/javascript" src="../../amcharts/flash/swfobject.js"></script>
+
+		<!-- chart is placed in this div. if you have more than one chart on a page, give unique id for each div -->
+		<div id="chartdiv"></div>
+
+	    <script type="text/javascript">
+	    
+            var params = {
+                bgcolor:"#FFFFFF"
+                };
+
+		    var flashVars = {
+		        path: "../../amcharts/flash/",
+		        settings_file: encodeURIComponent("../sampleData/radar_settings.xml"),
+		        data_file: encodeURIComponent("../sampleData/radar_data.xml")
+			};
+
+	    	swfobject.embedSWF("../../amcharts/flash/amradar.swf", "chartdiv", "600", "400", "8.0.0", "../../amcharts/flash/expressInstall.swf", flashVars, params);
+
+		</script>
+
+		<!-- end of amcharts script -->
+
+		<!-- other parameters which can be passed with flashVars:
+
+	        chart_data - data in csv or xml format;
+	        chart_settings - settings in xml format;
+	        additional_chart_settings - settings in xml format which will be appended to chart_settings or settings loaded from a file;
+	        loading_settings - string displayed while loading settings;
+	        loading_data - string displayed while loading data;
+	        preloader_color - hex color (#CC0000 for example) of a preloader bar;
+	        error_loading_file - string displayed if indicated file was not found.
+
+		 -->
+
+	</body>
+</html>

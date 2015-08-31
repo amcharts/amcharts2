@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <grid>
+    <x>
+      <alpha>5</alpha>
+    </x>
+    <y>
+      <alpha>5</alpha>
+      <fill_color>000000</fill_color>
+      <fill_alpha>5</fill_alpha>
+    </y>
+  </grid>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <bullets>
+    <hover_brightness>20</hover_brightness>
+    <grow_time>2</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </bullets>
+  <graphs>
+    <graph gid="0">
+      <color>B92F2F</color>
+      <balloon_text>x:{x} y:{y} value:{value}</balloon_text>
+      <bullet>y_error</bullet>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Error bar example</b>]]></text>
+      <x>10</x>
+      <y>20</y>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

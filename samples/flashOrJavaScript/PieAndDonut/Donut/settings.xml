@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <data_type>csv</data_type>
+  <balloon>
+    <show><![CDATA[{title}: {value} mln. ({percents}%) <br>{description}]]></show>
+    <alpha>80</alpha>
+    <max_width>300</max_width>
+    <corner_radius>5</corner_radius>
+    <border_width>3</border_width>
+    <border_color>000000</border_color>
+    <border_alpha>50</border_alpha>
+  </balloon>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <pie>
+    <inner_radius>40</inner_radius>
+    <hover_brightness>-10</hover_brightness>
+    <gradient>radial</gradient>
+    <gradient_ratio>0,0,0,-50,0,0,0,-50</gradient_ratio>
+  </pie>
+  <animation>
+    <start_time>2</start_time>
+    <start_effect>strong</start_effect>
+    <sequenced>1</sequenced>
+    <pull_out_on_click>0</pull_out_on_click>
+    <pull_out_time>1.5</pull_out_time>
+  </animation>
+  <data_labels>
+    <show>{title}: {percents}%</show>
+  </data_labels>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>World population</b>]]></text>
+      <y>10</y>
+      <text_size>12</text_size>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

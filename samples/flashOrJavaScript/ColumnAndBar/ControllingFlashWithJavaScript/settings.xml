@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <background>
+    <alpha>100</alpha>
+    <border_alpha>15</border_alpha>
+  </background>
+  <plot_area>
+    <margins>
+      <left>70</left>
+      <right>50</right>
+    </margins>
+  </plot_area>
+  <grid>
+    <category>
+      <alpha>5</alpha>
+    </category>
+    <value>
+      <alpha>5</alpha>
+    </value>
+  </grid>
+  <axes>
+    <category>
+      <width>1</width>
+    </category>
+    <value>
+      <width>1</width>
+    </value>
+  </axes>
+  <values>
+    <category>
+      <frequency>5</frequency>
+    </category>
+    <value>
+      <min>0</min>
+    </value>
+  </values>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <column>
+    <width>85</width>
+    <spacing>0</spacing>
+    <balloon_text>Anomaly in {series}: {value}C</balloon_text>
+    <grow_time>3</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </column>
+  <line>
+    <balloon_text>Anomaly in {series}: {value}C (Smoothed)</balloon_text>
+  </line>
+  <graphs>
+    <graph gid="1">
+      <title>Anomaly</title>
+      <color>B92F2F</color>
+      <balloon_text>Anomaly in {series}: {value}C</balloon_text>
+    </graph>
+    <graph gid="2">
+      <title>Smoothed</title>
+      <type>line</type>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Temperature anomaly (1950 - 2005)</b>]]></text>
+      <y>25</y>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

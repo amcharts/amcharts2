@@ -1,0 +1,86 @@
+<settings>
+  <type>bar</type>
+  <data_type>csv</data_type>
+  <background>
+    <file>../../samples/flashOrJavaScript/ColumnAndBar/ChartWithGradientFills/bg.jpg</file>
+  </background>
+  <plot_area>
+    <margins>
+      <left>33</left>
+      <right>125</right>
+      <top>120</top>
+      <bottom>40</bottom>
+    </margins>
+  </plot_area>
+  <grid>
+    <category>
+      <alpha>0</alpha>
+    </category>
+    <value>
+      <alpha>0</alpha>
+    </value>
+  </grid>
+  <axes>
+    <category>
+      <alpha>0</alpha>
+    </category>
+    <value>
+      <alpha>0</alpha>
+    </value>
+  </axes>
+  <values>
+    <category>
+      <enabled>0</enabled>
+    </category>
+    <value>
+      <enabled>0</enabled>
+      <min>0</min>
+    </value>
+  </values>
+  <balloon>
+    <color>FFFFFF</color>
+    <alpha>70</alpha>
+    <text_color>000000</text_color>
+    <text_size>11</text_size>
+    <corner_radius>5</corner_radius>
+    <border_width>1</border_width>
+    <border_color>FFFFFF</border_color>
+    <border_alpha>90</border_alpha>
+  </balloon>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <column>
+    <width>95</width>
+    <spacing>0</spacing>
+    <alpha>60</alpha>
+    <gradient>horizontal</gradient>
+    <hover_brightness>-80</hover_brightness>
+    <corner_radius_top>100%</corner_radius_top>
+    <corner_radius_bottom>100%</corner_radius_bottom>
+    <balloon_text><![CDATA[{series}: <b>{value} Litres</b>]]></balloon_text>
+    <data_labels>{series}: {value} Litres</data_labels>
+    <data_labels_text_color>FFFFFF</data_labels_text_color>
+    <data_labels_position>inside</data_labels_position>
+    <grow_time>3</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </column>
+  <line>
+    <balloon_text>{value}</balloon_text>
+    <data_labels>{value}</data_labels>
+  </line>
+  <graphs>
+    <graph gid="0">
+      <color>000000,FF6600</color>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Beer consumption by country (litres)</b>]]></text>
+      <x>30</x>
+      <y>80</y>
+      <text_color>FFFFFF</text_color>
+      <text_size>13</text_size>
+    </label>
+  </labels>
+</settings>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <text_color>FFFFFF</text_color>
+  <grid>
+    <color>FFFFFF</color>
+    <dashed>1</dashed>
+  </grid>
+  <axes>
+    <color>FFFFFF</color>
+  </axes>
+  <values>
+    <skip_last>1</skip_last>
+    <unit>%</unit>
+  </values>
+  <balloon>
+    <show>{title}: {value}%</show>
+  </balloon>
+  <legend>
+    <align>center</align>
+  </legend>
+  <type>100% stacked</type>
+  <radar>
+    <grow_time>2</grow_time>
+    <sequenced_grow>1</sequenced_grow>
+  </radar>
+  <graphs>
+    <graph gid="1">
+      <title>Salaries</title>
+      <color>C9FA03</color>
+      <line_width>2</line_width>
+      <fill_alpha>60</fill_alpha>
+      <bullet>round</bullet>
+    </graph>
+    <graph gid="2">
+      <title>Other expences</title>
+      <color>FAC303</color>
+      <line_width>2</line_width>
+      <fill_alpha>60</fill_alpha>
+      <bullet>round</bullet>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>Spending in the Company X</b>]]></text>
+      <y>10</y>
+      <text_size>12</text_size>
+      <align>center</align>
+    </label>
+  </labels>
+</settings>

@@ -1,0 +1,14 @@
+*********************************************************************************
+Third party software used:
+
+Raphael  - JavaScript Vector Library (http://raphaeljs.com)
+Licensed under the MIT (http://raphaeljs.com/license.html) license.
+
+Jason S. Kerchner base class (http://livingmachines.net)
+Licensed under BSD license: http://livingmachines.net/license
+
+swfobject (http://code.google.com/p/swfobject/)
+Licensed under MIT: http://www.opensource.org/licenses/mit-license.php
+
+David Knape & Patrick Mineault Bezier curves drawing logic.
+*********************************************************************************
