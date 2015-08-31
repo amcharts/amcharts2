@@ -1,3 +1,9 @@
+2.6.8
+pieAlpha property was ignored.
+plotAreaBorderAlpha was ignored if plotAreaAlphas was 0
+column graph type was ignoring startEffect property.
+chart property referencing to the chart object added to all event objects.  
+
 2.6.7
 Pie slices became invisible if startAlpha was < 1 on <= IE8 browsers (since 2.6.6 only)
 Performance with IE6 increased.
