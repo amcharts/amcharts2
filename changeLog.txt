@@ -1,3 +1,6 @@
+2.7.10
+Problem with balloon position in IE10 fixed.
+
 2.7.9
 
 FIX: If you used to add/remove some graphs for several times, some graphs could disappear.
