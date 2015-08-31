@@ -1,3 +1,12 @@
+2.6.6
+short year (YY) was incorrectly formatted in <= IE8 browsers
+alphaField was ignored by column graph
+chartScrollbar was not working properly when parseDates was set to false.
+some other minor bugs fixed.
+
+2.6.5
+some minor bugs fixed.
+
 2.6.4
 minSelectedTime property added to AmSerialTime
 
