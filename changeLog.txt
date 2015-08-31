@@ -1,3 +1,11 @@
+2.7.9
+
+FIX: If you used to add/remove some graphs for several times, some graphs could disappear.
+
+FIX: balloon could be positioned in a wrong place in some specific cases with IE.
+
+Some other minor bugs fixed.
+
 2.7.8
 
 url parameter added to chart.addLabel method
