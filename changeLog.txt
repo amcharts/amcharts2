@@ -1,3 +1,29 @@
+2.7.1
+chart.removeLegend() was not working properly.
+
+chart.startDate wasn't returning value.
+
+lineColorField added to graph's properties.
+
+2.7.0
+textAlign property added to AmBalloon. Possible values are left/middle/right,
+default is "middle".
+
+behindColumns property added to AmGraph. If set to true, line graph will be
+displayed behind column graphs.
+
+"init" event added to AmChart. Event is fired right after the chart is initialized
+for the very first time.
+
+totalText property added to ValueAxis. Usage example: 
+valueAxis.totalText = "total: [[total]]"
+It works only if the chart has column graphs and stackType is set to "regular" or "100%".
+
+showEntries property added to AmLegend. It might be used by StockChart - in case you want
+legend as it displayes title of the chart but don't want legend entries to be visible.
+
+A bug with separate data provider set to graph fixed.
+
 2.6.13
 FIXES:
 When viewing a page with a chart from iOS browser, console logged some errors
