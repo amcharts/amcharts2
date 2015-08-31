@@ -4,14 +4,18 @@
     "amCharts <contact@amcharts.com>"
   ],
   "description": "JavaScript Charts V2",
-  "main": "js/amcharts.js",
+  "main": [
+    "js/amcharts.js"
+  ],
   "keywords": [
     "amcharts",
     "charts",
     "javascript"
   ],
-  "moduleType": "globals",
-  "license": "Other",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "Custom",
   "homepage": "http://www.amcharts.com/",
   "repository": {
     "type": "git",
