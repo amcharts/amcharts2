@@ -1,3 +1,7 @@
+2.6.7
+Pie slices became invisible if startAlpha was < 1 on <= IE8 browsers (since 2.6.6 only)
+Performance with IE6 increased.
+
 2.6.6
 short year (YY) was incorrectly formatted in <= IE8 browsers
 alphaField was ignored by column graph
