@@ -1,3 +1,14 @@
+2.8.3
+
+When panEventsEnabled was set to true, balloons over bullets were not shown.
+
+Text in balloons was not properly vertically aligned if verticalSpacing was set
+to some different than default value.
+
+Balloon wasn't positioned properly if chart was in a scrollable div.
+
+Init event wasn't fired by AmPieChart.
+
 2.8.2
 
 Step line's corners sometimes were not perfect (one extra pixel could be added
