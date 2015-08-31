@@ -1,5 +1,5 @@
 *********************************************************************************
-This AmCharts software, Column&Bar chart is free under a linkware license
+This AmCharts software is free under a linkware license.
 
 This means you may not remove or hide in any other way link to amcharts
 web site - www.amcharts.com.
