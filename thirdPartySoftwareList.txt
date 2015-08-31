@@ -2,7 +2,7 @@
 Third party software used:
 
 Jason S. Kerchner base class (http://livingmachines.net)
-Licensed under BSD license: http://livingmachines.net/license
+Licensed under GNU license: http://livingmachines.net/license
 
 David Knape & Patrick Mineault Bezier curves drawing logic.
 

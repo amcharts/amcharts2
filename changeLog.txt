@@ -1,3 +1,62 @@
+2.7.8
+
+url parameter added to chart.addLabel method
+
+Printing in IE8 fixed;
+
+Two typos in property names fixed:
+
+ValueAxis.minMaxMultiplier (instead of minMaxMultiplayer)
+and                                                      
+ValueAxis.synchronizationMultiplier (instead of synchronizationMultiplyer)
+
+We do not longer support old names with errors, so you should adjust names if you use
+them in your scripts. Sorry for inconvenience.
+
+some other minor bugs fixed.
+
+2.7.7
+
+ValueAxis.minMaxMultiplier was ignored if min (or max) value was equal to 0.
+In some cases, when legend position was set to "left", chart might be positioned
+incorrectly. 
+
+2.7.6
+
+chart.invalidateSize() method was fixed
+charts used to ignore padding of a div.
+chartCursor.showCursorAt(category) method added. It will make the cursor to
+appear at specified cateogry or date.
+
+2.7.5
+Bug with smoothed line in scrollbar fixed.
+minMaxMultiplayer property added to ValueAxis. Default value is 1. You can increase
+min/max range using this property. Useful for bubble charts - prevents from bubbles
+being cut.
+Some other minor bugs fixed.
+
+2.7.4
+In case open and close values were equal, horizontal line wasn't drawn by candlestick chart.
+
+In case pie chart had one slice only, a tiny gap might be visible in IE8 and older.
+
+markerBorderColor of AmLegend was ignored.
+
+Ticks with no labels (when labelFrequency was > 1) were not hidden by categoryAxis.
+
+Balloons could overlap "show all" button preventing it from being clicked.
+
+
+2.7.3
+new line symbol \n was ignored in some browsers.
+
+smaller than 1 numbers were formatted incorrectly in some cases.
+
+2.7.2
+Usabilty with touch devices improved - scrollbar's drag icons has a bigger hit area.
+
+Some bugs fixed. 
+
 2.7.1
 chart.removeLegend() was not working properly.
 
